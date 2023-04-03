@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt update
-apt-get -y wget
+apt-get -y install wget
 
 # add latest glusterfs repo
 wget -O - https://download.gluster.org/pub/gluster/glusterfs/11/rsa.pub | apt-key add -
