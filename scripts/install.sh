@@ -12,7 +12,7 @@ echo deb https://download.gluster.org/pub/gluster/glusterfs/LATEST/Debian/${DEBI
 apt update
 
 # install more packages
-apt-get -y glusterfs-server install attr psmisc
+apt-get -y install glusterfs-server attr psmisc
 
 # Clean up
 apt-get -y autoremove \
