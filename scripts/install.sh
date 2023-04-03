@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add latest glusterfs repo
-wget -O - https://download.gluster.org/pub/gluster/glusterfs/9/rsa.pub | apt-key add -
+wget -O - https://download.gluster.org/pub/gluster/glusterfs/11/rsa.pub | apt-key add -
 DEBID=$(grep 'VERSION_ID=' /etc/os-release | cut -d '=' -f 2 | tr -d '"')
 DEBVER=$(grep 'VERSION=' /etc/os-release | grep -Eo '[a-z]+')
 DEBARCH=$(dpkg --print-architecture)
