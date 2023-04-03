@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# add latest glusterfs repo
+add-apt-repository -y ppa:gluster/glusterfs-11
+
 # install more packages
 apt-get -y update \
     && apt-get -y install attr psmisc glusterfs-server
