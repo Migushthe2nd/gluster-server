@@ -20,13 +20,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          submodules: true
-          token: ${{ secrets.REPOS_ACCESS_TOKEN_SERVICEACC }}
-      - name: Use Node.js 16
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
