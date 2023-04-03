@@ -23,6 +23,8 @@ EXPOSE 24007/tcp \
 
 ADD scripts /
 
+RUN chmod 777 ./*.sh
+
 RUN /bin/bash /install.sh \
     && rm -f /install.sh
 
