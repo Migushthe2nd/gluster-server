@@ -1,5 +1,8 @@
 #!/bin/bash
 
+apt update
+apt-get -y wget
+
 # add latest glusterfs repo
 wget -O - https://download.gluster.org/pub/gluster/glusterfs/11/rsa.pub | apt-key add -
 DEBID=$(grep 'VERSION_ID=' /etc/os-release | cut -d '=' -f 2 | tr -d '"')
